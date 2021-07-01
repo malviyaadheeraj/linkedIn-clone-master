@@ -17,7 +17,9 @@ const Login = (props) => {
         </Link>
         <div>
           <Link className="login__joinButton">Join Now</Link>
-          <Link className="login__signInButton">Sign In</Link>
+          <Link className="login__signInButton" onClick={() => props.signIn()}>
+            Sign In
+          </Link>
         </div>
       </div>
       <div className="login__body">
